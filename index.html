@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Atelier DOM JavaScript</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <!-- Bulma Version 0.7.5-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  </head>
+
+  <body>
+    <!-- START NAV -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="../">
+            <img src="assets/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <div id="navbarMenu" class="navbar-menu"></div>
+      </div>
+    </nav>
+    <!-- END NAV -->
+
+    <header class="hero is-info is-medium is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">Atelier DOM JS</h1>
+          <p>Objectif&nbsp;: dynamisez une page web HTML simple</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- START ARTICLE FEED -->
+      <section class="articles">
+        <div class="column is-8 is-offset-2">
+          <!-- START ARTICLE -->
+          <div class="card article">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content has-text-centered">
+                  <h2 class="title article-title">
+                    Structure du projet
+                  </h2>
+                </div>
+              </div>
+              <div class="content article-body">
+                <p>
+                  • Créez un nouveau fichier «&nbsp;index.html&nbsp;» avec le
+                  code suivant :
+                </p>
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;title&gt;
+      Document
+    &lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;button id="add"&gt;
+      Add row
+    &lt;/button&gt;
+    &lt;button id="del"&gt;
+      Remove row
+    &lt;/button&gt;
+    &lt;button id="hide"&gt;
+      Hide
+    &lt;/button&gt;
+    &lt;button id="show"&gt;
+      Show
+    &lt;/button&gt;
+    &lt;div&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Text 1&lt;/li&gt;
+        &lt;li&gt;Text 2&lt;/li&gt;
+        &lt;li&gt;Text 3&lt;/li&gt;
+        &lt;li&gt;Text 4&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+                <p>
+                  • Créez un fichier «&nbsp;script.js&nbsp;»
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END ARTICLE -->
+        </div>
+        <div class="column is-8 is-offset-2">
+          <!-- START ARTICLE -->
+          <div class="card article">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content has-text-centered">
+                  <h2 class="title article-title">
+                    Dans votre fichier HTML
+                  </h2>
+                </div>
+              </div>
+              <div class="content article-body">
+                <p>
+                  Liez votre fichier JavaScript à votre fichier HTML.
+                </p>
+                <p>
+                  Astuce&nbsp;: utilisez la balise script selon la bonne
+                  pratique évoquée en cours.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- END ARTICLE -->
+        </div>
+        <div class="column is-8 is-offset-2">
+          <!-- START ARTICLE -->
+          <div class="card article">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content has-text-centered">
+                  <h2 class="title article-title">
+                    Dans votre fichier JavaScript
+                  </h2>
+                </div>
+              </div>
+              <div class="content article-body">
+                <ul>
+                  <li>
+                    <p>
+                      Créez un écouteur d'événement sur votre bouton qui porte
+                      l’id «&nbsp;add&nbsp;».
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Au clic sur ce bouton, créez un nouvel élément de liste en
+                      JavaScript et insérez-le à la fin de la balise
+                      «&nbsp;ul&nbsp;».
+                    </p>
+                    <p>
+                      <b>Astuce&nbsp;:</b> regardez du côté de
+                      <a
+                        href="https://developer.mozilla.org/fr/docs/Web/API/Document/createElement"
+                        >createElement</a
+                      >.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Créez un écouteur d'événement sur votre bouton qui porte
+                      l’id «&nbsp;del&nbsp;».
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Au clic sur ce bouton, sélectionnez le dernier élément de
+                      la liste et supprimez-le.
+                    </p>
+                    <p>
+                      <b>Astuce&nbsp;:</b> utilisez le
+                      <a
+                        href="https://developer.mozilla.org/fr/docs/Web/CSS/:last-child"
+                        >pseudo-selecteur CSS last-child</a
+                      >
+                      pour la sélection.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Créez un écouteur d'événement sur votre bouton qui porte
+                      l’id «&nbsp;hide&nbsp;».
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Au clic sur ce bouton, cachez la liste en lui appliquant
+                      une classe CSS.
+                    </p>
+                    <p>
+                        <b>Astuce&nbsp;:</b> utilisez <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList"></a>classList]</a>.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                        Créez un écouteur d'événement sur votre bouton qui porte l’id «&nbsp;show&nbsp;»
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                        Au clic sur ce bouton, ré-affichez la liste en supprimer la classe CSS précédemment appliquée
+                    </p>
+                    <p>
+                        <b>Astuce&nbsp;:</b> utilisez <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/classList">classList</a>.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- END ARTICLE -->
+        </div>
+        <div class="column is-8 is-offset-2">
+          <!-- START ARTICLE -->
+          <div class="card article">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content has-text-centered">
+                  <h2 class="title article-title">Enjoy</h2>
+                </div>
+              </div>
+              <div class="content article-body">
+                <div class="has-text-centered">
+                  <img
+                    class=""
+                    src="http://giphygifs.s3.amazonaws.com/media/TqRkEhK7Dnv6U/giphy.gif"
+                    alt="enjoy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END ARTICLE -->
+        </div>
+        </div>
+      </section>
+      <!-- END ARTICLE FEED -->
+    </main>
+  </body>
+</html>
